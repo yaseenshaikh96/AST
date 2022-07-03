@@ -7,7 +7,6 @@ public class Program
 
     public static void Main(string[] args)
     {
-
         Example2();
     }
 
@@ -31,8 +30,8 @@ public class Program
 
         ExpressionC left = new ExpressionC(leftleft, plus, leftright);
         ExpressionC right = new ExpressionC(rightleft, plus, rightright);
-
         ExpressionC expressionC = new ExpressionC(left, plus, right);
+
         float value = expressionC.Eval();
         System.Console.Write("Value: " + value);
         System.Console.Write("\nExpression: ");
