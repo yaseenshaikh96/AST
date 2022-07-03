@@ -26,11 +26,11 @@ public class Program
         ExpressionC leftleft = new ExpressionC(2, plus, 4); // 6
         ExpressionC leftright = new ExpressionC(6, divi, 2); // 3
         ExpressionC rightleft = new ExpressionC(8, multi, 2); // 16
-        ExpressionC rightright = new ExpressionC(6, minus, 6); // 0  => 25
+        ExpressionC rightright = new ExpressionC(6, minus, 6); // 0
 
-        ExpressionC left = new ExpressionC(leftleft, plus, leftright);
-        ExpressionC right = new ExpressionC(rightleft, plus, rightright);
-        ExpressionC expressionC = new ExpressionC(left, plus, right);
+        ExpressionC left = new ExpressionC(leftleft, plus, leftright); // 9
+        ExpressionC right = new ExpressionC(rightleft, plus, rightright); // 16
+        ExpressionC expressionC = new ExpressionC(left, plus, right); // 25
 
         float value = expressionC.Eval();
         System.Console.Write("Value: " + value);
